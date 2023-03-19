@@ -1,0 +1,156 @@
+body {
+  background-color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  font-family: "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+#top {
+  background-image: url("/Assets/icons/top.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+.logoabk {
+  display: block;
+  position: absolute;
+  left: 8vw;
+  top: 4vw;
+}
+.ocr {
+  font-family: "OCR A Std", monospace, sans-serif;
+}
+.topmargin {
+  display: block;
+  margin-left: 5%;
+  margin-top: 28vh;
+  margin-right: 10%;
+}
+#top h1 {
+  font-size: 4rem;
+}
+.bold {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.size {
+  font-size: 1rem;
+}
+.sizebig {
+  font-size: 1.5rem;
+}
+.big {
+  font-size: 2.3rem;
+}
+.button {
+  background-image: url("/Assets/icons/przycisk.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: auto;
+  padding-left: 2.5rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
+}
+#button {
+  position: relative;
+  left: 13vw;
+  top: 5vh;
+  z-index: 1;
+}
+.margin {
+  margin-top: 2vh;
+  display: block;
+}
+#lng {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.lng {
+  width: 2rem;
+}
+.hide {
+  display: none;
+}
+@media all and (max-width: 1400px) {
+  .bold {
+    font-size: 1rem;
+  }
+  .size {
+    font-size: 0.7rem;
+  }
+  #top h1 {
+    font-size: 2rem;
+  }
+  .big {
+    font-size: 1.3rem;
+  }
+  .sizebig {
+    font-size: 1rem;
+  }
+}
+@media all and (max-width: 1000px) {
+  #top {
+    min-height: 50vh;
+  }
+  .topmargin {
+    margin-top: 13vh;
+    margin-right: 55%;
+  }
+  .button {
+    background-image: none;
+    background-color: #fdde2d;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  }
+}
+@media all and (max-width: 900px) {
+  #top {
+    background-position-y: 0;
+  }
+  .logoabk {
+    width: 30%;
+    position: relative;
+    left: 0.5rem;
+    top: 2.5rem;
+  }
+  #top h1 {
+    display: none;
+  }
+  .topmargin {
+    margin-top: 20%;
+    margin-right: 59%;
+    margin-left: 2%;
+  }
+  #top a {
+    font-size: 0.8rem;
+  }
+  #button {
+    left: 1vw;
+    top: 5vh;
+  }
+}
+@media all and (max-height: 700px) and (max-width: 900px) {
+  #top {
+    min-height: 60vh;
+  }
+}
+@media all and (max-height: 700px) and (max-width: 300px) {
+  #top {
+    min-height: 65vh;
+  }
+}

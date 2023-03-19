@@ -1,0 +1,27 @@
+#nav-top {
+  position: fixed;
+  right: 1rem;
+  background-color: rgb(94, 94, 94);
+  margin-right: -1rem;
+  margin-left: 0;
+  z-index: 5;
+}
+#nav-top ul {
+  padding-inline-start: 0;
+}
+#nav-top li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+#nav-top a {
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+  font-size: 1.1vw;
+}
+@media all and (max-width: 1000px) {
+  #nav-top {
+    display: none;
+  }
+}

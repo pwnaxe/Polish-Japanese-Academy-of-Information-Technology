@@ -1,0 +1,65 @@
+.content2 {
+  background-image: url("/Assets/icons/partnership.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100vw;
+  min-height: 60vh;
+  margin-bottom: 10rem;
+}
+.content2 {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr 1fr 0.1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". content2text . button2 .";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.content2text {
+  grid-area: content2text;
+  text-align: left;
+  margin-left: 5rem;
+}
+.button2 {
+  grid-area: button2;
+}
+#partner .button {
+  background-size: cover;
+  padding-bottom: 1rem;
+  padding-right: 3rem;
+  padding-left: -1rem;
+  background-position: -1rem;
+}
+@media all and (max-width: 1000px) {
+  .content2 {
+    min-height: auto;
+    margin-bottom: 0;
+  }
+}
+@media all and (max-width: 600px) {
+  #partner .button {
+    background-size: cover;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-right: 3rem;
+    padding-left: -1rem;
+    background-position: -2rem;
+    font-size: 0.8rem;
+  }
+  .content2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "content2text" "button2";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .content2text {
+    margin-left: 5%;
+  }
+}
